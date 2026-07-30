@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>EasyLegal AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <nav class="navbar"> 
+
+    <div class="logo">
+        EasyLegal <span>AI</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#upload">Upload</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+</nav>
+
+<div class="hero">
+
+    <h1> EasyLegal AI</h1>
+
+    <h2>AI Powered Legal Contract Analyzer</h2>
+
+    <p>
+        Upload your legal contracts and let Artificial Intelligence
+        analyze risks, payments, important clauses and summaries
+        within seconds.
+    </p>
+
+    
+
+</div>
+<section class="upload-section">
+    <h2>Upload Your Contract</h2>
+    <p>Upload a PDF contract and let EasyLegal AI analyze it in seconds.</p>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <input type="file" name="contract" accept=".pdf" required>
+        <br><br>
+        <button type="submit">Analyze Contract</button>
+    </form>
+    <section id="features" class="features">
+
+    <h2>Why Choose EasyLegal AI?</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>📄 AI Contract Summary</h3>
+            <p>Get a simple explanation of complex legal contracts within seconds.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⚠️ Risk Detection</h3>
+            <p>Identify risky clauses and missing information before signing.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>💰 Payment Analysis</h3>
+            <p>Extract payment details, contract values, and important financial terms.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📥 Download Report</h3>
+            <p>Download a professional contract analysis report after AI processing.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="how-it-works">
+
+    <h2>How EasyLegal AI Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <h3>Upload Contract</h3>
+            <p>Select your PDF contract securely.</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <h3>AI Analysis</h3>
+            <p>Our AI extracts important information.</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <h3>Risk Detection</h3>
+            <p>Important clauses and risks are identified.</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <h3>Download Report</h3>
+            <p>Download the complete analysis instantly.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+</body>
+<section class="about" id="about">
+
+    <h2>About EasyLegal AI</h2>
+
+    <p>
+        EasyLegal AI is an AI-powered web application that helps users
+        understand legal contracts quickly and easily.
+        It analyzes PDF contracts, identifies important information,
+        detects risks, extracts important clauses, generates an AI
+        summary, and provides useful recommendations in simple language.
+    </p>
+
+</section>
+<footer class="footer">
+    <p>EasyLegal AI</p>
+    <p>Developed by Bindu S</p>
+</footer>
+
+</html>

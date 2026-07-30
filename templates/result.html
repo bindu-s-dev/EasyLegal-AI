@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLegal AI Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>EasyLegal AI Analysis</h1>
+    <div class="card">
+        <h2> AI Summary</h2>
+        <p>{{ result.summary }}</p>
+    </div>
+
+   <div class="card">
+    <table class="result-table">
+
+        <tr>
+            <td><strong> Contract Type</strong></td>
+            <td>{{ result.contract_type }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> Company</strong></td>
+            <td>{{ result.company }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> Employee / Tenant</strong></td>
+            <td>{{ result.employee }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> Payment</strong></td>
+            <td>{{ result.payment }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> Start Date</strong></td>
+            <td>{{ result.start_date }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> End Date</strong></td>
+            <td>{{ result.end_date }}</td>
+        </tr>
+
+        <tr>
+            <td><strong> Risk Level</strong></td>
+            <td>{{ result.risk }}</td>
+        </tr>
+
+    </table>
+</div>
+
+</div>
+<div class="card">
+
+    <h2> Important Clauses</h2>
+
+   <div class="clause-container">
+
+{% for clause in result.important_clauses %}
+
+<div class="clause-card">
+
+<h3>✔ {{ clause }}</h3>
+
+<p>{{ result.clause_details[clause] }}</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+<!-- Recommendations -->
+<div class="card">
+    <h2> Recommendations</h2>
+
+    <ul>
+        {% for item in result.recommendations %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="action-buttons">
+    <a href="/download-report">
+        <button>📥 Download Analysis Report</button>
+    </a>
+
+</div>
+</div>
+    <a href="/" class="button">Analyze Another Contract</a>
+
+</div>
+
+</body>
+</html>

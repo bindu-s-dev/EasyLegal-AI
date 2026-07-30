@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EasyLegal AI - Analyzing</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<script>
+let progress = 0;
+
+function moveBar() {
+
+    let bar = document.getElementById("bar");
+    let percent = document.getElementById("percent");
+
+    let steps = [
+        "📄 Reading PDF...",
+        "🏢 Finding Company...",
+        "👤 Identifying Parties...",
+        "💰 Checking Payment...",
+        "📅 Finding Dates...",
+        "⚠️ Detecting Risks...",
+        "🤖 Generating AI Report..."
+    ];
+
+    let text = document.getElementById("status");
+
+    let timer = setInterval(function(){
+
+        progress++;
+
+        bar.style.width = progress + "%";
+        percent.innerHTML = progress + "%";
+
+        if(progress<15)
+            text.innerHTML = steps[0];
+
+        else if(progress<30)
+            text.innerHTML = steps[1];
+
+        else if(progress<45)
+            text.innerHTML = steps[2];
+
+        else if(progress<60)
+            text.innerHTML = steps[3];
+
+        else if(progress<75)
+            text.innerHTML = steps[4];
+
+        else if(progress<90)
+            text.innerHTML = steps[5];
+
+        else
+            text.innerHTML = steps[6];
+
+        if(progress>=100){
+            clearInterval(timer);
+
+            window.location.href="/result";
+        }
+
+    },35);
+
+}
+
+window.onload = moveBar;
+
+</script>
+
+</head>
+
+<body class="loading-body">
+
+<div class="loading-card">
+
+<h1>🤖 EasyLegal AI</h1>
+
+<h3>Analyzing Contract...</h3>
+
+<div class="progress-box">
+
+<div id="bar" class="progress-fill"></div>
+
+</div>
+
+<div id="percent" class="percent">0%</div>
+
+<p id="status">Reading PDF...</p>
+
+<div class="loader"></div>
+
+</div>
+
+</body>
+</html>
