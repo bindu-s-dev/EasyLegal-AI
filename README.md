@@ -2,7 +2,9 @@
 
 ## AI-Powered Legal Contract Analyzer
 
-EasyLegal AI is a Flask-based web application that analyzes legal contracts and extracts important information.
+EasyLegal AI is a Flask-based web application that analyzes legal contracts using Artificial Intelligence techniques. It helps users upload PDF contracts, extracts important details, and presents a simple summary that is easy to understand.
+
+---
 
 ## Features
 
@@ -11,46 +13,57 @@ EasyLegal AI is a Flask-based web application that analyzes legal contracts and 
 - Extract company name
 - Extract employee/client name
 - Extract payment amount
-- Extract start date
-- Extract end date
-- Generate a simple analysis report
+- Extract contract start date
+- Extract contract end date
+- Generate an easy-to-read analysis report
+
+---
 
 ## Technologies Used
 
 - Python
 - Flask
-- HTML
-- CSS
-- Regular Expressions
+- HTML5
+- CSS3
+- Regular Expressions (Regex)
 - Git
 - GitHub
 
+---
+
 ## Project Structure
 
+```
 EasyLegal-AI/
 │── app.py
 │── backend/
-│── templates/
 │── static/
+│── templates/
 │── uploads/
 │── README.md
-
-## How to Run
-
-1. Install Python
-2. Install Flask
-3. Run
-
 ```
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/bindu-s-dev/EasyLegal-AI.git
+cd EasyLegal-AI
+pip install flask pypdf
 python app.py
 ```
 
-4. Open
+Open:
 
 ```
 http://127.0.0.1:5000
 ```
 
+---
+
 ## Author
 
-Bindu S
+**Bindu S**
+
+BCA Student | AI Enthusiast
