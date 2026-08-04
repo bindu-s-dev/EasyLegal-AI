@@ -86,16 +86,16 @@ EasyLegal-AI/
 ![Upload Contract](screenshots/02-upload1.png.png)
 
 ### 📄 Upload Success
-![Upload Success](screenshots/03-upload2.png.png)
+![Upload Success](screenshots/03-upload2.png)
 
 ### 📊 Analysis Result
-![Result 1](screenshots/04-result1.png.png)
+![Result 1](screenshots/04-result1.png)
 
-![Result 2](screenshots/05-result2.png.png)
+![Result 2](screenshots/05-result2.png)
 
-![Result 3](screenshots/06-result3.png.png)
+![Result 3](screenshots/06-result3.png)
 
-![Result 4](screenshots/07-result4.png.png)
+![Result 4](screenshots/07-result4.png)
 
 ---
 
