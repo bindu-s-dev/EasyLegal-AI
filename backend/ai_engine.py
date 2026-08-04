@@ -357,6 +357,45 @@ def analyze_contract(text):
         recommendations.append("Ensure registration/stamp duty and explicit profit sharing details are present.")
     if "Governing Law" in important_clauses:
         recommendations.append("Verify governing law implications.")
+    report = f"""
+    ========== EASYLEGAL AI REPORT ==========
+
+    Contract Type: {contract_type}
+
+    Company/Firm:
+    {company_name}
+
+    Second Party:
+    {person_name}
+
+    Payment:
+    {payment_value}
+
+    Start Date:
+    {start}
+
+    End Date:
+    {end}
+
+    Risk Level:
+    {risk}
+
+    Summary:
+    {summary}
+
+     Important Clauses:
+     """
+
+    for clause in important_clauses:
+      report += f"\n- {clause}: {clause_details[clause]}"
+
+      report += "\n\nRecommendations:\n"
+
+    for rec in recommendations:
+       report += f"- {rec}\n"
+
+    with open("analysis_report.txt", "w", encoding="utf-8") as f:
+      f.write(report)
 
     return {
         "contract_type": contract_type,
