@@ -77,18 +77,18 @@ EasyLegal-AI/
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🏠 Home Page
+###  Home Page
 ![Home Page](screenshots/01-home.png)
 
-### 📤 Upload Contract
+###  Upload Contract
 ![Upload Contract](screenshots/02-upload1.png)
 
-### 📄 Upload Success
+###  Upload Success
 ![Upload Success](screenshots/03-upload2.png)
 
-### 📊 Analysis Result
+###  Analysis Result
 ![Result 1](screenshots/04-result1.png)
 
 ![Result 2](screenshots/05-result2.png)
@@ -127,7 +127,7 @@ python app.py
 
 ---
 
-## 🎯 Future Improvements
+##  Future Improvements
 
 - AI-powered contract summarization
 - Multiple language support
@@ -140,7 +140,7 @@ python app.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Bindu S**
 
