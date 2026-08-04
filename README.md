@@ -1,10 +1,10 @@
-# ⚖️ EasyLegal AI
+#   EasyLegal AI
 
 EasyLegal AI is an AI-powered web application that helps users analyze legal contracts quickly and easily. Users can upload a PDF contract, and the application automatically extracts important information, identifies key legal clauses, assesses the contract's risk level, and generates a downloadable analysis report.
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 🔗 Live Website: https://easylegal-ai.onrender.com/
 
