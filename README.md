@@ -80,10 +80,10 @@ EasyLegal-AI/
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/01-home.png.png)
+![Home Page](screenshots/01-home.png)
 
 ### 📤 Upload Contract
-![Upload Contract](screenshots/02-upload1.png.png)
+![Upload Contract](screenshots/02-upload1.png)
 
 ### 📄 Upload Success
 ![Upload Success](screenshots/03-upload2.png)
